@@ -15,17 +15,21 @@ function layout({ children }: PropsWithChildren) {
         backgroundSize: '30px 30px'
       }}
     >
-      <div className='lg:col-span-4'>
-        <Navbar />
-        <div
-          className='py-16 px-4 sm:px-8 lg:px-16'
-          style={{
-            maxWidth: '1400px',  // Add this - controls max width
-            margin: '0 auto'      // Add this - centers the content
-          }}
-        >
-          {children}
-        </div>
+      <Navbar />
+      <div
+        className='py-8'
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(12, 1fr)',
+          gridTemplateRows: 'auto 1fr', // Banner row (auto-height), Content row (fill remaining space)
+          gap: '24px',
+          margin: '0 auto',
+          paddingLeft: '16px', // Small gap from left edge
+          paddingRight: '16px',
+          minHeight: 'calc(100vh - 120px)', // Full viewport minus navbar (~100px) and padding
+        }}
+      >
+        {children}
       </div>
     </main>
   );

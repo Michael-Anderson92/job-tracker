@@ -52,10 +52,8 @@ div[class*="ag-theme"] .ag-paging-panel {
 /* Force yellow background on all grid elements */
 .ag-theme-quartz,
 div[class*="ag-theme"] {
-  --ag-background-color: #FFFB46 !important;
-  --ag-header-background-color: #FFFB46 !important;
-  --ag-odd-row-background-color: #FFFB46 !important;
-  --ag-even-row-background-color: #FFFB46 !important;
+  --ag-background-color: #FEFAE7 !important;
+  --ag-header-background-color: #FEFAE7 !important;
 }
 
 /* Headers */
@@ -65,7 +63,7 @@ div[class*="ag-theme"] {
 div[class*="ag-theme"] .ag-header,
 div[class*="ag-theme"] .ag-header-row,
 div[class*="ag-theme"] .ag-header-cell {
-  background-color: #FFFB46 !important;
+  background-color: #FEFAE7 !important;
   color: #113B32 !important;
 }
 
@@ -74,7 +72,7 @@ div[class*="ag-theme"] .ag-header-cell {
 .ag-theme-quartz .ag-cell,
 div[class*="ag-theme"] .ag-row,
 div[class*="ag-theme"] .ag-cell {
-  background-color: #FFFB46 !important;
+  background-color: #FEFAE7 !important;
   color: #113B32 !important;
 }
 
@@ -83,13 +81,13 @@ div[class*="ag-theme"] .ag-cell {
 .ag-theme-quartz .ag-row-even,
 div[class*="ag-theme"] .ag-row-odd,
 div[class*="ag-theme"] .ag-row-even {
-  background-color: #FFFB46 !important;
+  background-color: #FEFAE7 !important;
 }
 
 /* Hover state - lighter yellow */
 .ag-theme-quartz .ag-row-hover,
 div[class*="ag-theme"] .ag-row-hover {
-  background-color: #F0EC3D !important;
+  background-color: #FEFAE7 !important;
 }
 
 /* ============================================
@@ -164,7 +162,7 @@ div[class*="ag-theme"] .ag-cell-inline-editing {
   align-items: center !important;
   border: 3px solid #1BA68A !important;
   border-radius: 0 !important;
-  background-color: #FFFB46 !important;
+  background-color: #FFFFFF !important;
 }
 
 /* Remove inner borders from inputs/selects */
@@ -209,7 +207,7 @@ div[class*="ag-theme"] .ag-cell-inline-editing input[type="date"] {
 
 .ag-theme-quartz .ag-paging-panel,
 div[class*="ag-theme"] .ag-paging-panel {
-  background-color: #FFFB46 !important;
+  background-color: #FEFAE7 !important;
   color: #113B32 !important;
   border-top: 2px solid #1BA68A !important;
 }

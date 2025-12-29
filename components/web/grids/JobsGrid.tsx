@@ -12,7 +12,7 @@ import { AllCommunityModule } from 'ag-grid-community';
 import { jobTrackerTheme } from '@/lib/ag-grid-theme';
 import { colors, buttonVariants } from '@/lib/design-system';
 import { useMemo, useState } from 'react';
-import { FloatingActionIcons } from './FloatingActionIcons';
+import { FloatingActionIcons } from '../icons/FloatingActionIcons';
 
 // Import AG Grid styles
 import 'ag-grid-community/styles/ag-grid.css';

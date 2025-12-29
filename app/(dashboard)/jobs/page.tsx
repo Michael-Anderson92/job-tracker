@@ -5,7 +5,7 @@
  * It demonstrates the proper Next.js 14 pattern for SSR with React Query hydration.
  */
 
-import { JobsGrid } from "@/components/grids/JobsGrid";
+import { JobsGrid } from "@/components/web/grids/JobsGrid";
 import {
   dehydrate,
   HydrationBoundary,

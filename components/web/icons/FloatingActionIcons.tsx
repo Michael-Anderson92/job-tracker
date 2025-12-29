@@ -1,5 +1,6 @@
 "use client";
 
+import './FloatingActionIcons.css';
 import { Eye, ExternalLink } from 'lucide-react';
 import { colors } from '@/lib/design-system';
 
@@ -59,31 +60,6 @@ export function FloatingActionIcons({
             <button
               onClick={() => window.open(`/jobs/${job.id}`, '_blank')}
               className="floating-icon-button"
-              style={{
-                width: '40px',
-                height: '40px',
-                backgroundColor: '#FFFFFF',
-                border: `3px solid #9333EA`,
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                cursor: 'pointer',
-                boxShadow: `4px 4px 0px ${colors.text}`,
-                transition: 'transform 0.1s, box-shadow 0.1s',
-              }}
-              onMouseDown={(e) => {
-                e.currentTarget.style.transform = 'translate(2px, 2px)';
-                e.currentTarget.style.boxShadow = `2px 2px 0px ${colors.text}`;
-              }}
-              onMouseUp={(e) => {
-                e.currentTarget.style.transform = 'translate(0, 0)';
-                e.currentTarget.style.boxShadow = `4px 4px 0px ${colors.text}`;
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translate(0, 0)';
-                e.currentTarget.style.boxShadow = `4px 4px 0px ${colors.text}`;
-              }}
               aria-label="View job details"
             >
               <Eye size={20} color={colors.text} strokeWidth={2.5} />
@@ -94,31 +70,6 @@ export function FloatingActionIcons({
               <button
                 onClick={() => window.open(job.jobUrl || undefined, '_blank')}
                 className="floating-icon-button"
-                style={{
-                  width: '40px',
-                  height: '40px',
-                  backgroundColor: '#FFFFFF',
-                  border: `3px solid #9333EA`,
-                  borderRadius: '50%',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  cursor: 'pointer',
-                  boxShadow: `4px 4px 0px ${colors.text}`,
-                  transition: 'transform 0.1s, box-shadow 0.1s',
-                }}
-                onMouseDown={(e) => {
-                  e.currentTarget.style.transform = 'translate(2px, 2px)';
-                  e.currentTarget.style.boxShadow = `2px 2px 0px ${colors.text}`;
-                }}
-                onMouseUp={(e) => {
-                  e.currentTarget.style.transform = 'translate(0, 0)';
-                  e.currentTarget.style.boxShadow = `4px 4px 0px ${colors.text}`;
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'translate(0, 0)';
-                  e.currentTarget.style.boxShadow = `4px 4px 0px ${colors.text}`;
-                }}
                 aria-label="View job posting"
               >
                 <ExternalLink size={18} color={colors.text} strokeWidth={2.5} />

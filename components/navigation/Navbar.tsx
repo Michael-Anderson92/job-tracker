@@ -1,4 +1,4 @@
-import LinksDropdown from '../LinksDropdown';
+import LinksDropdown from '../navigation/LinksDropdown';
 import { UserButton } from '@clerk/nextjs';
 import ThemeToggle from '../ThemeToggle';
 import { colors } from '@/lib/design-system';
@@ -29,13 +29,13 @@ function Navbar() {
         {/* Left Side - Logo & Desktop Links */}
         <div className='flex items-center gap-8'>
           {/* Logo */}
-          <Link 
-            href='/jobs' 
+          <Link
+            href='/home'
             className='hover:opacity-80 transition-opacity'
           >
-            <span 
+            <span
               className={`text-2xl ${archivoBlack.className}`}
-              style={{ 
+              style={{
                 color: colors.text,
                 letterSpacing: '0.05em'
               }}
@@ -46,26 +46,33 @@ function Navbar() {
 
           {/* Desktop Links */}
           <div className='hidden lg:flex items-center gap-6'>
-            <Link 
-              href='/jobs'
+            <Link
+              href='/home'
               className='font-semibold hover:opacity-70 transition-opacity'
               style={{ color: colors.text }}
             >
-              Dashboard
+              Home
             </Link>
-            <Link 
-              href='/jobs/stats'
+            <Link
+              href='/job-tracker'
               className='font-semibold hover:opacity-70 transition-opacity'
               style={{ color: colors.text }}
             >
-              Stats
+              Job Tracker
             </Link>
-            <Link 
-              href='/jobs'
+            <Link
+              href='/resumes'
               className='font-semibold hover:opacity-70 transition-opacity'
               style={{ color: colors.text }}
             >
-              All Jobs
+              Resumes
+            </Link>
+            <Link
+              href='/interviews'
+              className='font-semibold hover:opacity-70 transition-opacity'
+              style={{ color: colors.text }}
+            >
+              Interviews
             </Link>
           </div>
 

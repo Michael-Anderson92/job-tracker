@@ -1,4 +1,4 @@
-import EditJobForm from '@/components/EditJobForm';
+import EditJobForm from '@/components/web/forms/EditJobForm';
 import { getSingleJobAction } from '@/utils/actions';
 
 import {
